@@ -139,7 +139,7 @@ body {
 .publicationUser {
     display: flex;
     margin: 5px;
-    width: 100%;
+
     overflow-x: scroll;
     padding: 5px;
 }
@@ -201,6 +201,9 @@ body {
     max-height: 600px;
 
 }
+
+
+
 
 .contenedorimgpub {
     display: flex;
@@ -363,10 +366,43 @@ body {
 
 .comentarionuevo {
     border: none;
-    max-width: 400px;
+    width: 250px;
 }
 
 .intebloq {
     display: flex;
     justify-content: center;
+}
+
+.sugerenciasperonas{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.colorHistorias{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media(max-width:600px){
+ 
+    .bloqueUser {
+      width: 100px;
+      height:145px ;
+      margin: 5px;
+    
+    }
+
+  .sugerencias{
+    width: 150px;
+    height: 200px;
+  }
+    
+.agregar-amigo{
+    margin-left: 9px;
+}
+
 }
