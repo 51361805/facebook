@@ -23,6 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-left: 3px;
+    cursor: pointer;
 }
 
 .hamburger-icon span {
@@ -175,12 +176,28 @@ body {
 
 .publicationUser {
     display: flex;
-    margin: 3px;
+   margin-top: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
 
     overflow-x: scroll;
     padding: 5px;
+}
+
+
+.buscadorBarra{
+    height: 30px;
+    width: 400px;
+    border-radius: 1.5rem;
+    border: none;margin-top: 18px;
+    background-color: #a1989885;
+    opacity: 0;
+    width: 0;
+    margin-left: 100PX;
+}
+
+.buscadorBarra:hover{
+    background-color: #dddada85; 
 }
 
 .bloqueUser {
@@ -634,3 +651,10 @@ ul {
 .imgasideprofile {
     width: 57px;
 }
+
+.ocultarelemento{
+    width: 400px;
+    opacity: 1;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+

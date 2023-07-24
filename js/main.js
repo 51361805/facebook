@@ -118,3 +118,20 @@ function cargarComentarios() {
 
 }
 cargarComentarios()
+
+
+
+
+
+
+const busqueda =document.getElementById('busqueda')
+
+
+const search= document.getElementById('search-icon')
+
+search.addEventListener( "click", function () {
+
+    busqueda.classList.toggle("ocultarelemento")
+
+    
+})
