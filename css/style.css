@@ -125,7 +125,7 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 100px;
-    margin-left: 5px;
+  
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
 }
 
@@ -134,7 +134,7 @@ body {
 
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-left: 5px;
+  
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
 }
 
@@ -175,9 +175,9 @@ body {
 
 .publicationUser {
     display: flex;
-margin: 3px;
-border-radius: 5px;
-margin-bottom: 10px;
+    margin: 3px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 
     overflow-x: scroll;
     padding: 5px;
@@ -240,7 +240,7 @@ margin-bottom: 10px;
     border-radius: 5PX;
 }
 
-.aPub:hover{
+.aPub:hover {
     background-color: #333;
 }
 
@@ -293,7 +293,7 @@ margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 30%);
 
-  
+
     margin-bottom: 10px;
     margin-top: 30px;
 }
@@ -468,7 +468,7 @@ margin-bottom: 10px;
     }
 
     .agregar-amigo {
-        margin-left: 9px;
+        margin-left: 7px;
     }
 
 }
@@ -533,11 +533,13 @@ margin-bottom: 10px;
         padding-left: 8px;
     }
 
-    .spancomenatio{
+    .spancomenatio {
         font-size: 10px;
     }
 
-
+    .ocultaractividad {
+        display: none;
+    }
 }
 
 
