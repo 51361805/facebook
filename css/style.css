@@ -5,6 +5,7 @@ body {
     background-color: #18191a;
     overflow-x: hidden;
     color: white;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 
 }
 
@@ -68,7 +69,15 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(255, 254, 254);
+    border-bottom: 1px solid #ffffff5c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
+
+
 
 .contbuscar {
     display: flex;
@@ -88,8 +97,8 @@ body {
 .contenedoriconos {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(255, 254, 254);
-    margin-top: 30px;
+    background-color: rgb(70 70 70);
+    margin-top: 73px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -126,17 +135,16 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 100px;
-  
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+
+
 }
 
 .contpub {
     background-color: #393a3a;
 
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+
+
+
 }
 
 .comentarionuevo {
@@ -176,8 +184,8 @@ body {
 
 .publicationUser {
     display: flex;
-   margin-top: 5px;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin-bottom: 10px;
 
     overflow-x: scroll;
@@ -185,19 +193,19 @@ body {
 }
 
 
-.buscadorBarra{
-    height: 30px;
+.buscadorBarra {
+    height: 48px;
     width: 400px;
     border-radius: 1.5rem;
-    border: none;margin-top: 18px;
+    border: none;
     background-color: #a1989885;
     opacity: 0;
     width: 0;
-    margin-left: 100PX;
+    margin-left: 20px;
 }
 
-.buscadorBarra:hover{
-    background-color: #dddada85; 
+.buscadorBarra:hover {
+    background-color: #dddada85;
 }
 
 .bloqueUser {
@@ -253,7 +261,7 @@ body {
 .aPub {
     text-decoration: none;
     font-size: 17px;
-    padding: 20PX 10PX;
+    padding: 5px 10PX;
     border-radius: 5PX;
 }
 
@@ -308,7 +316,7 @@ body {
     background-color: #393a3a;
     ;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 30%);
+
 
 
     margin-bottom: 10px;
@@ -333,7 +341,7 @@ body {
 
 .fas {
     font-size: 15px;
-    color: #333;
+    color: #b9adad;
     margin-right: 10px;
 }
 
@@ -357,8 +365,8 @@ body {
 }
 
 .botoncomen {
-    background-color: #9e9a9a;
-    color: black;
+    background-color: #ffffff00;
+    color: #b9adad;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -459,14 +467,14 @@ body {
 }
 
 .colorHistorias {
-    background-color: #414447;
+    background-color: #393a3a;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 
 .menu-bar {
-    background-color: #3333338f
+    background-color: #393a3a
 }
 
 
@@ -491,7 +499,7 @@ body {
 }
 
 .contenedrpricipal {
-    width: 800px;
+    width: 755px;
 }
 
 .centro {
@@ -504,6 +512,10 @@ body {
     display: none;
 }
 
+.barrados {
+    display: none;
+}
+
 @media(max-width:825px) {
 
     body {
@@ -512,6 +524,7 @@ body {
 
     .contenedrpricipal {
         width: auto;
+        margin-top: 53px;
     }
 
 
@@ -539,7 +552,7 @@ body {
     }
 
     .menu-bar {
-        background-color: white;
+
         justify-content: space-evenly;
     }
 
@@ -557,7 +570,25 @@ body {
     .ocultaractividad {
         display: none;
     }
+
+    .barraspher {
+        display: none;
+    }
+
+    .barrados {
+
+        display: block;
+    }
+
+
+
 }
+
+
+
+
+
+
 
 
 .menu-bar {
@@ -582,7 +613,7 @@ body {
 
 aside {
     position: fixed;
-    top: 95px;
+    top: 45px;
     left: 0;
     width: 200px;
     height: 100%;
@@ -616,6 +647,11 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+
+.z125x {
+    color: #007bff;
 }
 
 .itemspan {
@@ -652,9 +688,22 @@ ul {
     width: 57px;
 }
 
-.ocultarelemento{
+.ocultarelemento {
     width: 400px;
     opacity: 1;
-    transition: width 0.5s ease, height 0.5s ease;
+    transition: width 0.7s ease, height 0.7s ease;
 }
 
+
+.contenedorhis {
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.comentariobox {
+    margin-left: 10px;
+    font-size: 15px;
+}
