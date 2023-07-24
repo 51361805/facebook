@@ -89,10 +89,10 @@ function cargarComentarios() {
           </div>
 
           <div class="intebloq">
-         <img class="iconreaciones" src="/img/iconosreaciones-removebg-preview.png" alt="">
+         <img class="iconreaciones" src="./img/iconosreaciones-removebg-preview.png" alt="">
           <p class="interacciones"> <span class="number">122</span> Me gusta <span
                class="number">32</span>
-           Comentarios <span class="number">1200</span> Compartidos</p>
+           Comentarios <span class="number">1200</span>Compartidos</p>
           </div>
           <div class="contenedor">
            <button class="botoncomen"> <i class="fas fa-thumbs-up"></i>
