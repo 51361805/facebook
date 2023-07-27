@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #18191a;
+    background-color: #1E1E1E;
     overflow-x: hidden;
     color: white;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+font-family: 'Roboto', sans-serif;
 
 }
 
@@ -86,19 +87,27 @@ body {
 .search-icon,
 .hamburger-icon {
     margin: 5px;
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
     background-color: #a1989885;
     padding: 7px;
     border-radius: 50%;
     padding-left: 10px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars {
+    color: #b9adad;
 }
 
 .contenedoriconos {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(70 70 70);
-    margin-top: 73px;
+    margin-top: 90px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -131,7 +140,7 @@ body {
     display: flex;
     align-items: center;
 
-    background-color: #393a3a;
+    background-color: #171613;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 100px;
@@ -140,7 +149,7 @@ body {
 }
 
 .contpub {
-    background-color: #393a3a;
+    background-color: #171613;
 
 
 
@@ -213,7 +222,7 @@ body {
     height: 200px;
 
     border-radius: 10px;
-    margin: 10px;
+
 }
 
 .imagenProfile {
@@ -229,11 +238,12 @@ body {
     height: 30px;
     object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .flexUser {
     display: flex;
-    align-items: start;
+    align-items: center;
     margin-left: 5px
 }
 
@@ -313,7 +323,7 @@ body {
 }
 
 .nuevaPublication {
-    background-color: #393a3a;
+    background-color: #171613;
     ;
     border-radius: 5px;
 
@@ -467,14 +477,14 @@ body {
 }
 
 .colorHistorias {
-    background-color: #393a3a;
+    background-color: #171613;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 
 .menu-bar {
-    background-color: #393a3a
+    background-color: #171613
 }
 
 
@@ -504,7 +514,7 @@ body {
 
 .centro {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
@@ -604,22 +614,27 @@ body {
 }
 
 .logopc {
-    width: 50px;
+    width: 40px;
 
 }
 
-
+.contenedorenlinea{
+    max-height: 350px;
+    overflow-y: scroll;
+}
 
 
 aside {
-    position: fixed;
-    top: 45px;
+
+    top: 45;
+    margin-top: 65px;
     left: 0;
-    width: 200px;
+    width: auto;
     height: 100%;
     background-color: transparent;
-    padding: 20px;
+
     box-sizing: border-box;
+
 }
 
 
@@ -666,8 +681,8 @@ ul {
 
 .itemspan {
     cursor: pointer;
-    margin-bottom: 15px;
-    width: 250px;
+    margin-bottom: 0;
+    width: 280px;
 }
 
 .itemspan:hover {
@@ -675,7 +690,7 @@ ul {
     border-radius: 5px;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1120px) {
 
     aside {
         display: none;
@@ -683,6 +698,15 @@ ul {
 
 }
 
+
+.segundoaside {
+    float: right;
+    width: 300px;
+    margin-top: 50px;
+    /* Ajusta el ancho según tus necesidades */
+    margin-left: 20px;
+    /* Ajusta el margen según tus necesidades */
+}
 
 .imgasideprofile {
     width: 57px;
@@ -706,4 +730,50 @@ ul {
 .comentariobox {
     margin-left: 10px;
     font-size: 15px;
+}
+
+.linkitem {
+    color: white;
+    display: flex;
+    align-items: center;
+padding-left: 7px;
+}
+
+.contpublicidad {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+}
+
+.imgpublicidad {
+    max-width: 130px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.publicidad {
+    text-align: center;
+}
+
+.con345 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contpublicidad:hover{
+    background-color:#4c4e50 ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.enlinea{
+    width: 40px;
+    height: 40px;
+}
+
+.conectadosli{
+    width: 6px;
+    height: 6px;
 }

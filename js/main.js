@@ -64,6 +64,8 @@ const publicacionesUser = [
     }
 ];
 
+
+
 function cargarComentarios() {
 
     const contenedorPublicaciones = document.getElementById('contenedoragregarPublicacion');
@@ -112,7 +114,7 @@ function cargarComentarios() {
          </div>
 
           </div>`
-          contenedorPublicaciones.appendChild(publicacion)
+        contenedorPublicaciones.appendChild(publicacion)
 
     });
 
@@ -121,17 +123,69 @@ cargarComentarios()
 
 
 
+function cargarHistorias() {
+
+    const historias = document.getElementById('historias');
+
+    publicacionesUser.forEach(historia => {
+
+        const publicarHistorias = document.createElement('div');
+        publicarHistorias.innerHTML = `
+                <div class="contcolor">
+                    <section class="bloqueUser">
+                        <img class="imagenProfile" src="./img//ryoji-iwata-IBaVuZsJJTo-unsplash.jpg" alt="">
+
+
+                    </section>
+                    <div class="flexUser">
+                        <img class="usuarioPublicado" src="./img/bailey-zindel-NRQV-hBF10M-unsplash.jpg" alt="">
+                        <p class="namePublication">${historia.name}</p>
+                    </div>
+                </div>
+        `
+
+        historias.appendChild(publicarHistorias)
+    });
+
+
+}
+cargarHistorias()
 
 
 
-const busqueda =document.getElementById('busqueda')
+function enlinea() {
+    const conectados = document.getElementById('conectados'); 
+
+    publicacionesUser.forEach(conectado => {
+        const enweb = document.createElement('li');
+        enweb.classList.add('itemspan');
+
+        enweb.innerHTML = `
+            <div class="profilecircule imgasideprofile enlinea">
+                <img class="imgprofile" src="${conectado.imgComentario}" alt="">
+                <div class="online-dot conectadosli"></div>
+            </div>
+            <div class="fecha">
+                <div class="alineado">
+                    <p class="namePublication">${conectado.name}</p>
+                </div>
+            </div>
+        `;
+
+        conectados.appendChild(enweb);
+    });
+}
+enlinea();
 
 
-const search= document.getElementById('search-icon')
+const busqueda = document.getElementById('busqueda')
 
-search.addEventListener( "click", function () {
+
+const search = document.getElementById('search-icon')
+
+search.addEventListener("click", function () {
 
     busqueda.classList.toggle("ocultarelemento")
 
-    
+
 })
