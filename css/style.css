@@ -10,6 +10,10 @@ font-family: 'Roboto', sans-serif;
 
 }
 
+.spancomenatio{
+    font-family: 'Roboto', sans-serif;
+
+}
 .hamburger-icon {
     display: flex;
     flex-direction: column;
@@ -506,10 +510,16 @@ font-family: 'Roboto', sans-serif;
         margin-left: 7px;
     }
 
+    .contenedorhis{
+        display: none;
+    }
+
 }
 
 .contenedrpricipal {
-    width: 755px;
+    width: 100%;
+    overflow-y: scroll;
+
 }
 
 .centro {
@@ -649,7 +659,7 @@ aside li {
 
 aside a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 aside a:hover {
@@ -776,4 +786,15 @@ padding-left: 7px;
 .conectadosli{
     width: 6px;
     height: 6px;
+}
+
+
+
+@media(max-width:600px) {
+
+
+    .contenedorhis{
+        display: none;
+    }
+
 }
